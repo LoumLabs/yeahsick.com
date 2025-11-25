@@ -3,7 +3,7 @@ body, html {
     margin: 0;
     background-color: #000;
     color: #fff;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,18 +11,18 @@ body, html {
 }
 
 .container {
-    max-width: 500px;
+    max-width: 800px;
     width: 90%;
 }
 
 .logo {
-    max-width: 300px;
-    width: 80%;
+    max-width: 600px;
+    width: 90%;
     margin-bottom: 20px;
 }
 
 .tagline {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 20px;
     color: #ccc;
 }
