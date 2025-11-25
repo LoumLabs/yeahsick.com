@@ -1,29 +1,43 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body, html {
     height: 100%;
     margin: 0;
     background-color: #000;
     color: #fff;
     font-family: 'Inter', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
 .container {
+    flex: 1; /* Allows this container to grow and push the footer down */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
     max-width: 800px;
-    width: 90%;
+    width: 100%;
+    margin: 0 auto; /* Center the container */
 }
 
 .logo {
-    max-width: 600px;
-    width: 90%;
+    max-width: 588px;
+    width: 100%;
     margin-bottom: 20px;
 }
 
 .tagline {
-    font-size: 1em;
-    margin-bottom: 20px;
+    font-size: 1.1em;
+    margin-bottom: 30px;
     color: #ccc;
 }
 
@@ -38,4 +52,13 @@ body, html {
 .contact:hover {
     color: #ccc;
     border-bottom-color: #ccc;
+}
+
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: #555;
+    font-size: 0.8em;
+    font-weight: 300;
 }
